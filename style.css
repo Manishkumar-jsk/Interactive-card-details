@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:18px;
+
+}
+.card-home{
+    background-image:url('/images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    height:260px;
+}
+.bg-card-back{
+    width:380px;
+    height:180px;
+    margin-left:100px;
+    margin-top:30px;
+}
+.bg-card-front{
+    position:absolute;
+    top:-85px;
+    width:380px;
+    height:180px;
+    margin-left:20px;
+}
+.card-img-front{
+    position:relative;
+}
+.card-logo-img{
+    position:absolute;
+    bottom:95px;
+    left:45px;
+    width:60px;
+}
+.card-logo{
+    position:relative;
+}
+.card-text{
+    color:hsl(0,0%,100%);
+    margin-left:45px;
+}
+.card-text h1{
+    letter-spacing:4px;
+    font-size:23px;
+}
+.card-text p{
+    letter-spacing:1.8px;
+    font-size:13px;
+    margin-top:20px;
+}
+#card-value{
+    letter-spacing:1.8px;
+    font-size:13px;
+    margin-top:20px;
+}
+.container{
+    background-color:hsl(0,0%,100%);
+    width:100%;
+    height:auto;
+}
+form{
+    display:block;
+    margin-top:80px;
+    margin-left:20px;
+    margin-right:20px;
+}
+label{
+    font-size:15px;
+    letter-spacing:3px;
+}
+input[type=text]{
+    width:100%;
+    height:45px;
+    border: 2px solid #ccc;
+    margin-top:6px;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding-left:20px;
+}
+input[type=pattern]{
+    width:100%;
+    height:45px;
+    border: 2px solid #ccc;
+    margin-top:6px;
+    margin-bottom:10px;
+    border-radius:10px;
+    padding-left:20px;
+}
+input[type=number]{
+    width:100%;
+    height:45px;
+    border: 2px solid #ccc;
+    margin-top:6px;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding-left:20px;
+}
+input[name=expDate]{
+    width:20%;
+    margin-right:8px;
+    padding-left:20px;
+}
+input[name=cvc]{
+    width:53%;
+}
+.button{
+    background-color:hsl(278,68%,11%);
+    border:none;
+    width:100%;
+    border-radius:10px;
+    padding:15px 32px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom:30px;
+    cursor:pointer;
+    color:hsl(0,0%,100%);
+}
+.submission{
+    display:none;
+    margin-top: 100px;
+    margin-left:50px;
+    margin-right:50px;
+}
+.icon-complete{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#error_msg{
+    display:none;
+    color:hsl(0, 100%, 66%);
+    font-size:10px;
+}
+.desktop-card-back-conatiner{
+    display:none;
+    position: relative;
+}
+#desktop-card-back-text{
+    position:absolute;
+    top:102px;
+    left:340px;
+}
+.error-container{
+    display:flex;
+    position: relative;
+}
+.month{
+    position:absolute;
+    top:58px;
+}
+.year{
+    position:absolute;
+    left:100px;
+    top:58px;
+}
+.cvc{
+    position:absolute;
+    left:200px;
+    top:58px;
+}
+
+
+/*--------------------Desktop------------------------------*/
+@media screen and (min-width:1440px){
+    .card-home{
+        background-image:url('/images/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:contain;
+        height:710px;
+    }
+    .bg-card-back{
+        margin-top:350px;
+        margin-left:140px;
+    }
+    .bg-card-front{
+        position:absolute;
+        top:-384px;
+        margin-left:80px;  
+    }
+    .card-logo-img{
+        bottom:400px;
+        left:100px;
+        width:60px;
+    }
+    .card-logo{
+        position:relative;
+    }
+    .card-text{
+        color:hsl(0,0%,100%);
+        margin-left:100px;
+        position: relative;
+        bottom:300px;
+    }
+    .card-text h1{
+        letter-spacing:4px;
+        font-size:23px;
+    }
+    .card-text p{
+        letter-spacing:1.8px;
+        font-size:13px;
+        margin-top:20px;
+    }
+    .container{
+        background-color:hsl(0,0%,100%);
+        height:auto;
+    }
+    form{
+        position:absolute;
+        bottom:140px;
+        left:700px;
+        float:right;
+        margin-top:10px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    input[type=text]{
+        width:70%;
+        height:45px;
+        margin-top:6px;
+        margin-bottom:20px;
+        border-radius:10px;
+        padding-left:20px;
+    }
+    input[type=pattern]{
+        width:70%;
+        height:45px;
+        margin-top:6px;
+        margin-bottom:20px;
+        border-radius:10px;
+        padding-left:20px;
+    }
+    input[type=number]{
+        width:70%;
+        height:45px;
+        margin-top:6px;
+        margin-bottom:20px;
+        border-radius:10px;
+        padding-left:20px;
+    }
+    input[name=expDate]{
+        width:12%;
+        margin-right:8px;
+        padding-left:20px;
+    }
+    input[name=cvc]{
+        width:43%;
+    }
+    .button{
+        background-color:hsl(278,68%,11%);
+        border:none;
+        width:71%;
+        border-radius:10px;
+        padding:15px 32px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom:30px;
+        cursor:pointer;
+        color:hsl(0,0%,100%);
+    }
+    .submission{
+        display:none;
+        position:absolute;
+        bottom:240px;
+        left:700px;
+        margin-top: 50px;
+        margin-left:50px;
+        margin-right:50px;
+    }
+    .icon-complete{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left:140px;
+        padding-right:140px;
+    }
+    #complete-button{
+        width:105%;
+    }
+    #error_msg{
+        display:none;
+        color:hsl(0, 100%, 66%);
+        font-size:10px;
+        position: relative;
+        bottom:15px;
+    }
+    .desktop-card-back-conatiner{
+        display:block;
+    }
+    .month{
+        position:relative;
+        top:58px;
+        right:102px;
+    }
+    .year{
+        position:relative;
+        top:58px;
+        left:-100px;
+    }
+    .cvc{
+        margin:0px;
+        padding:0px;
+        position:absolute;
+        top:58px;
+        left:-340px;
+    }
+}
