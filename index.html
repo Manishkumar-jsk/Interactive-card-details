@@ -32,14 +32,14 @@
     <div class="container" id="card-container">
         <form class="mobile">
             <label for="cholderName">CARDHOLDER NAME</label><br>
-            <input type="pattern" name="cholderName" id="cholderName" placeholder="e.g. Jane Appleseed" ><br>
+            <input type="pattern" name="cholderName" id="cholderName" placeholder="e.g. Jane Appleseed"><br>
             <p id="error_msg">Manish sharma</p>
             <label for="cNumber">CARD NUMBER</label><br>
             <input type="pattern" name="cNumber" id="cNumber" placeholder="e.g. 1234 5678 9123 0000" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}"><br>
             <p class="error-messase-cnumber" id="error_msg"></p>
             <label for="expDate">EXP.DATE(MM/YY) <span style="margin-left:10px;">CVC</span></label><br>
             <div class="error-container">
-                <input type="text" name="expDate" id="cMonth" placeholder="MM" required maxlength="2">
+                <input type="text" name="expDate" id="cMonth" class="cDesk" placeholder="MM" required maxlength="2">
                 <span id="error_msg" class="month">Month</span>
                 <input type="text" name="expDate" id="cYear" placeholder="YY" required maxlength="2">
                 <span id="error_msg" class="year">Year</span>

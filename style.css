@@ -151,18 +151,19 @@ input[name=cvc]{
 }
 .month{
     position:absolute;
-    top:58px;
+    top:56px;
 }
 .year{
     position:absolute;
     left:100px;
-    top:58px;
+    top:56px;
 }
 .cvc{
     position:absolute;
-    left:200px;
-    top:58px;
+    left:195px;
+    top:56px;
 }
+
 
 
 /*--------------------Desktop------------------------------*/
@@ -225,15 +226,15 @@ input[name=cvc]{
         margin-top:6px;
         margin-bottom:20px;
         border-radius:10px;
-        padding-left:20px;
+        /*padding-left:20px;*/
     }
     input[type=pattern]{
         width:70%;
         height:45px;
         margin-top:6px;
-        margin-bottom:20px;
+        margin-bottom:5px;
         border-radius:10px;
-        padding-left:20px;
+        /*padding-left:20px;*/
     }
     input[type=number]{
         width:70%;
@@ -241,7 +242,7 @@ input[name=cvc]{
         margin-top:6px;
         margin-bottom:20px;
         border-radius:10px;
-        padding-left:20px;
+        /*padding-left:20px;*/
     }
     input[name=expDate]{
         width:12%;
@@ -282,31 +283,29 @@ input[name=cvc]{
     #complete-button{
         width:105%;
     }
-    #error_msg{
+    /*#error_msg{
         display:none;
         color:hsl(0, 100%, 66%);
         font-size:10px;
         position: relative;
         bottom:15px;
-    }
+    }*/
     .desktop-card-back-conatiner{
         display:block;
     }
-    .month{
+    /*.month{
         position:relative;
         top:58px;
         right:102px;
-    }
-    .year{
+    }*/
+    /*.year{
         position:relative;
         top:58px;
         left:-100px;
-    }
+    }*/
     .cvc{
-        margin:0px;
-        padding:0px;
         position:absolute;
         top:58px;
-        left:-340px;
+        left:200px;
     }
 }

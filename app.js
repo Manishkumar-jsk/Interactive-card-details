@@ -26,6 +26,7 @@ cardHolderNumber.addEventListener("keydown",function(e){
         this.value = this.value + " ";
     }
 })
+
 button.addEventListener("click",function(){
     var x = cardHolderName.value;
     var y = cardHolderNumber.value;
@@ -35,17 +36,18 @@ button.addEventListener("click",function(){
     let text;
     let regEx = /^[A-Za-z\s]+$/;
     let numreg = /^[0-9\s]*$/;
-
     if(x == ""){
         text = "Can't be empty";
         errorMsg[0].style.display = "block";
         cardHolderName.style.border = "2px solid hsl(0, 100%, 66%)";
+        cardHolderName.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[0].innerHTML = text;
     }
     if(!x.match(regEx) && x != ""){
         text = "Only letters";
         errorMsg[0].style.display = "block";
         cardHolderName.style.border = "2px solid hsl(0, 100%, 66%)";
+        cardHolderName.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[0].innerHTML = text;        
     }
     if(x.match(regEx) && x != ""){
@@ -56,12 +58,14 @@ button.addEventListener("click",function(){
         text = "Can't be empty";
         errorMsg[1].style.display = "block";
         cardHolderNumber.style.border = "2px solid hsl(0, 100%, 66%)";
+        cardHolderNumber.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[1].innerHTML = text;
     }
     if(!y.match(numreg) && y != ""){
         text = "Only numbers";
         errorMsg[1].style.display = "block";
         cardHolderNumber.style.border = "2px solid hsl(0, 100%, 66%)";
+        cardHolderNumber.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[1].innerHTML = text;        
     }
     if(y.match(numreg) && y != ""){
@@ -73,12 +77,14 @@ button.addEventListener("click",function(){
         errorMsg[2].style.display = "block";
         errorMsg[2].innerHTML = text;
         cMonth.style.border = "2px solid hsl(0,100%,66%)";
+        cMonth.style.outline = "0px solid hsl(0,100%,66%)";
     }
     if(Month <  0 || Month > 12){
         text = "Enter correct month";
         errorMsg[2].style.display = "block";
         errorMsg[2].innerHTML = text;
         cMonth.style.border = "2px solid hsl(0,100%,66%)";
+        cMonth.style.outline = "0px solid hsl(0,100%,66%)";
     }
     if(Month > 0 && Month <= 12){
         errorMsg[2].style.display = "none";
@@ -89,6 +95,7 @@ button.addEventListener("click",function(){
         errorMsg[3].style.display = "block";
         errorMsg[3].innerHTML = text;
         cYear.style.border = "2px solid hsl(0,100%,66%)";
+        cYear.style.outline = "0px solid hsl(0,100%,66%)";
     }
     if(Year != "" && Year.match(numreg)){
         errorMsg[3].style.display = "none";
@@ -97,7 +104,8 @@ button.addEventListener("click",function(){
     if(!Year.match(numreg) && Year != ""){
         text = "Only numbers";
         errorMsg[3].style.display = "block";
-        cardHolderNumber.style.border = "2px solid hsl(0, 100%, 66%)";
+        cYear.style.border = "2px solid hsl(0, 100%, 66%)";
+        cYear.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[3].innerHTML = text;        
     }
     if(cvc == ""){
@@ -105,11 +113,13 @@ button.addEventListener("click",function(){
         errorMsg[4].style.display = "block";
         errorMsg[4].innerHTML = text;
         CVC.style.border = "2px solid hsl(0,100%,66%)";
+        CVC.style.outline = "0px solid hsl(0,100%,66%)";
     }
     if(!cvc.match(numreg) && cvc != ""){
         text = "Only numbers";
         errorMsg[4].style.display = "block";
-        cardHolderNumber.style.border = "2px solid hsl(0, 100%, 66%)";
+        CVC.style.border = "2px solid hsl(0, 100%, 66%)";
+        CVC.style.outline = "0px solid hsl(0,100%,66%)";
         errorMsg[4].innerHTML = text;        
     }
     if(cvc != ""){
